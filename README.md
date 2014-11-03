@@ -11,24 +11,26 @@ Usage
 
 1. For code blocks:
 
+```
    using (var action = Analytics.TrackTime("Save Student")) {
       db.SaveChanges();
    }
-
+```
 
 
 2. For method-level interception:
 
    Decorate a method, class or assembly with the ETWTraceAttribute.
 
+```
      [ETWTrace(category: "Instructor")]
      public ActionResult Index(int? id, int? courseID) {..}
+```
 
-
+```
      [ETWTrace(category: "Course", addTiming: true)]
      public class CourseController : Controller {..}
-
-
+```
 
 
 
