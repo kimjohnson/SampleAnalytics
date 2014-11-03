@@ -9,7 +9,7 @@ to trace code entry and exit.
 Usage
 -----
 
-1. For code blocks:
+For code blocks:
 
 ```
    using (var action = Analytics.TrackTime("Save Student")) {
@@ -18,7 +18,7 @@ Usage
 ```
 
 
-2. For method-level interception:
+For method-level interception:
 
    Decorate a method, class or assembly with the ETWTraceAttribute.
 
